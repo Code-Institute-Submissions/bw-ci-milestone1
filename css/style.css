@@ -56,7 +56,7 @@ html {
 	}
 	#logo {
 		display: inline-block;
-		width: 100px;
+		width: 80px;
 		padding: 0;
 		margin-right: 20px;
 	}
@@ -132,12 +132,27 @@ nav > .navbar {
 	background-color: var(--site-gray);
 }
 .card-title {
+	margin: 0 auto;
 	background-color: var(--site-white);
-	padding: 30px;
-	border-radius: 50%;
+	padding: 20px 10px;
+	width: 150px;
+	border-radius: 20%;
 	-webkit-box-shadow: 33px 25px 71px -32px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 33px 25px 71px -32px rgba(0, 0, 0, 0.75);
 	box-shadow: 33px 25px 71px -32px rgba(0, 0, 0, 0.75);
+}
+.card-text {
+	margin-top: 10px;
+}
+.membership-icon-wrapper {
+}
+.membership-icon {
+	margin: 0 auto;
+	background-color: var(--site-khaki);
+	height: 150px;
+	width: 150px;
+}
+.card-img-top {
 }
 .btn-custom {
 	background-color: var(--site-blue);
