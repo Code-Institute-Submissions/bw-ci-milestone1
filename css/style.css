@@ -38,7 +38,7 @@ li {
 /* ========= Navbar ========= */
 
 .navbar {
-	height: 100px;
+	height: 99px;
 	background-color: var(--site-dark);
 	border-bottom: 1px solid var(--site-accent);
 }
@@ -74,11 +74,15 @@ li {
 		margin-right: 20px;
 	}
 	.navbar-collapse {
+		height: 38vh;
 		color: var(--site-white);
+		background-color: black;
+		opacity: 90%;
 		text-align: center;
 		font-size: 1.5rem;
 		line-height: 2em;
 		border-top: 1px solid var(--site-accent);
+		border-bottom: 1px solid var(--site-accent);
 	}
 }
 nav > .navbar {
@@ -256,39 +260,52 @@ i {
 	text-align: center;
 } */
 /* ========= Main ========= */
+.card {
+	margin: 10px 5px;
+	width: 300px;
+}
 .card-body {
 	background-color: var(--site-accent);
+	height: 200px;
 }
 .card-title {
 	margin: 0 auto;
-	background-color: var(--site-white);
-	padding: 20px 10px;
+	margin-top: 65%;
 	width: 150px;
 	border-radius: 20%;
+	font-size: 38px;
 	-webkit-box-shadow: 33px 25px 71px -32px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 33px 25px 71px -32px rgba(0, 0, 0, 0.75);
 	box-shadow: 33px 25px 71px -32px rgba(0, 0, 0, 0.75);
 }
 .card-text {
-	margin-top: 10px;
+	height: 50px;
+	margin: 20px;
 }
-.membership-icon-wrapper {
+.membership-icon {
+	height: 300px;
 }
 .membership-icon {
 	margin: 0 auto;
-	background-color: var(--site-khaki);
-	height: 150px;
-	width: 150px;
+	background-color: var(--site-silver);
+	height: 250px;
+	width: 250px;
 }
 .card-img-top {
 }
 .btn-custom {
-	background-color: var(--site-blue);
+	background-color: var(--site-dark);
 	color: var(--site-white);
+	border-left: 7px solid var(--site-gold);
+	border-right: 7px solid var(--site-gold);
 	border-radius: 10px;
 	padding: 10px 20px;
 	-webkit-box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
 	box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
+}
+.btn-custom:hover {
+	color: var(--site-dark);
+	background-color: var(--site-gold);
 }
 /* ========= Footer ========= */
