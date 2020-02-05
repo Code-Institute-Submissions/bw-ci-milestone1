@@ -25,15 +25,23 @@ html {
 	background-color: var(--site-dark);
 }
 a {
-	color: inherit;
+	color: white;
 	text-decoration: none;
 }
+a:hover {
+	color: var(--site-gold);
+	text-decoration: none;
+}
+
 ul,
 li {
 	list-style-type: none;
 }
 .row {
 	margin: 0;
+}
+.container-fluid {
+	padding: 0;
 }
 /* ========= Navbar ========= */
 
@@ -45,7 +53,11 @@ li {
 
 .navbar-nav > li > a {
 	text-decoration: none;
+	color: var(--site-dark);
 	opacity: 150% !important;
+}
+.navbar-nav > li > a:hover {
+	color: var(--site-white);
 }
 #logo {
 	margin-left: -20px;
@@ -265,7 +277,8 @@ i {
 	width: 300px;
 }
 .card-body {
-	background-color: var(--site-accent);
+	background-color: var(--site-dark);
+	color: var(--site-white);
 	height: 200px;
 }
 .card-title {
@@ -282,6 +295,9 @@ i {
 	height: 50px;
 	margin: 20px;
 }
+.mf-membership {
+	background-color: var(--site-accent);
+}
 .membership-icon {
 	height: 300px;
 }
@@ -294,8 +310,8 @@ i {
 .card-img-top {
 }
 .btn-custom {
-	background-color: var(--site-dark);
-	color: var(--site-white);
+	background-color: var(--site-gold);
+	color: var(--site-dark);
 	border-left: 7px solid var(--site-gold);
 	border-right: 7px solid var(--site-gold);
 	border-radius: 10px;
@@ -305,7 +321,67 @@ i {
 	box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
 }
 .btn-custom:hover {
-	color: var(--site-dark);
-	background-color: var(--site-gold);
+	color: var(--site-white);
+	background-color: var(--site-dark);
+	border-top: 1px solid gold;
+	border-bottom: 1px solid gold;
 }
+
 /* ========= Footer ========= */
+footer {
+	background-color: var(--site-dark);
+	color: var(--site-light);
+}
+.footer-social {
+	border-top: 1px solid var(--site-accent);
+	padding-top: 3px;
+}
+.footer-links > li > img {
+	width: 100px;
+}
+.social-icons {
+	text-align: center;
+	border-bottom: 1px solid var(--site-accent);
+	padding-bottom: 3px;
+}
+.social-icons > a > i {
+	padding: 0 10px;
+	font-size: 2em;
+}
+@media (min-width: 768px) {
+	.footer-social {
+		border-top: 1px solid var(--site-accent);
+		padding-top: 20px;
+	}
+	.social-icons {
+		padding-bottom: 20px;
+	}
+	.social-icons > a > i {
+		font-size: 3em;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+.footer-copyright {
+	font-size: 0.7em;
+	text-align: center;
+}
+.footer-main {
+	padding: 30px;
+}
+.footer-content-wrapper {
+	padding-bottom: 15px;
+	border-bottom: 1px solid var(--site-accent);
+}
+.footer-nav {
+}
+.footer-brand {
+	display: flex;
+}
+.footer-brand > img {
+	width: 120px;
+	height: 120px;
+}
+.footer-brand > h2 {
+	margin-left: 20px;
+}
