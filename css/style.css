@@ -32,37 +32,43 @@ a:hover {
 	color: var(--site-gold);
 	text-decoration: none;
 }
-accent .row {
+ul,
+li {
+	list-style-type: none;
+}
+.row {
 	margin: 0;
-	d .container-fluid {
-		padding: 0;
-	}
-	/* ========= Navbar ========= */
+}
+.container-fluid {
+	padding: 0;
+}
+/* ========= Navbar ========= */
 
-	.navbar {
-		height: 99px;
-		background-color: var(--site-dark);
-		border-bottom: 1px solid var(--site-accent);
-	}
+.navbar {
+	height: 99px;
+	background-color: var(--site-dark);
+	border-bottom: 1px solid var(--site-accent);
+}
 
-	.navbar-nav > li > a {
-		text-decoration: none;
-		color: var(--site-dark);
-		opacity: 150% !important;
-	}
-	.navbar-nav > li > a:hover {
-		color: var(--site-white);
-	}
-	#logo {
-		margin-left: -20px;
-	}
-	.logo-text {
-		font-family: 'Bangers', cursive;
-		font-size: 28px;
-		vertical-align: middle;
-		margin-left: 0px;
-	}
-	accentaccent: 10px;
+.navbar-nav > li > a {
+	text-decoration: none;
+	color: var(--site-dark);
+	opacity: 150% !important;
+}
+.navbar-nav > li > a:hover {
+	color: var(--site-white);
+}
+#logo {
+	margin-left: -20px;
+}
+.logo-text {
+	font-family: 'Bangers', cursive;
+	font-size: 28px;
+	vertical-align: middle;
+	margin-left: 0px;
+}
+.navbar-toggler {
+	padding: 10px;
 	background-color: var(--site-silver);
 	color: black;
 }
@@ -300,8 +306,6 @@ i {
 	background-color: var(--site-silver);
 	height: 250px;
 	width: 250px;
-}
-.card-img-top {
 }
 .btn-custom {
 	background-color: var(--site-gold);
