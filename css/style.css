@@ -85,9 +85,9 @@ li {
 		margin-right: 20px;
 	}
 	.navbar-collapse {
-		height: 38vh;
+		height: fit-content;
 		color: var(--site-white);
-		background-color: black;
+		background-color: var(--site-dark);
 		opacity: 90%;
 		text-align: center;
 		font-size: 1.5rem;
@@ -184,7 +184,7 @@ nav > .navbar {
 }
 .carousel {
 	margin: 0 auto;
-	max-width: 70%;
+	max-width: 45%;
 }
 .carousel-item {
 	transition: transform 1.6s ease-in-out, -webkit-transform 1.6s ease-in-out;
@@ -194,9 +194,9 @@ nav > .navbar {
 	position: relative;
 }
 .carousel-img {
-	margin-top: 126px;
 	width: 100%;
 	max-height: 500px;
+	margin: 5px;
 }
 /* ========= CONTACT - INFOBOX ========= */
 .info-box {
@@ -242,35 +242,8 @@ nav > .navbar {
 }
 .info-email {
 	margin-left: 30px;
-} /*
-.info-box {
-	background-color: rgba(255, 255, 255, 0.4);
-	width: 300px;
-	margin: 0 auto;
-	text-align: center;
 }
-.info-box-item {
-	width: 100%;
-	display: inline-block;
-	background-color: var(--site-silver);
-	margin: 10px 0px;
-	padding: 2px 0px;
-}
-.info-box-item > ul {
-	display: inline-block;
-	background-color: rgba(255, 255, 255, 0.35);
-	border-radius: 2px;
-}
-i {
-	font-size: 26px;
-	margin: 8px;
-}
-.opening-day {
-	text-align: left;
-}
-.opening-time {
-	text-align: center;
-} */
+
 /* ========= Main ========= */
 .card {
 	margin: 10px 5px;
@@ -323,6 +296,19 @@ i {
 	background-color: var(--site-dark);
 	border-top: 1px solid gold;
 	border-bottom: 1px solid gold;
+}
+@media (max-width: 576px) {
+	.btn-custom {
+		background-color: var(--site-gold);
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-radius: 0px;
+		padding: 5px 10px;
+		margin: 2.4px 15px;
+		-webkit-box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
+		box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
+	}
 }
 
 /* ========= Footer ========= */
@@ -390,21 +376,32 @@ footer {
 	border-bottom: 1px solid var(--site-accent);
 	padding-bottom: 15px;
 }
+.footer-brand > img {
+	width: 120px;
+	height: 120px;
+}
 @media (min-width: 768px) {
 	.footer-content-wrapper {
 		display: inline-flex;
 		padding-bottom: 0;
 	}
+	.footer-brand {
+		display: flex;
+		height: fit-content;
+	}
+	.footer-brand > img {
+		width: 180px;
+		height: 180px;
+	}
+	.footer-brand > h2 {
+		font-size: 3em;
+		margin-left: 20px;
+	}
 }
 .footer-brand {
 	display: flex;
-	margin-top: 10px;
-}
-.footer-brand > img {
-	width: 120px;
-	height: 120px;
+	height: fit-content;
 }
 .footer-brand > h2 {
 	margin-left: 20px;
-	padding: 20px;
 }
