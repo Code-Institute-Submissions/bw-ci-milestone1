@@ -10,7 +10,6 @@
 /* ========= Colors ========= */
 :root {
 	--site-gold: #e3b04b;
-	--site-light: #f8f8f8;
 	--site-accent: #f1d6ab;
 	--site-dark: #2b2b28;
 	--site-silver: #c3c2b2;
@@ -148,7 +147,7 @@ nav > .navbar {
 }
 .join-info:hover {
 	padding: 4px;
-	background-color: var(--site-light);
+	background-color: var(--site-white);
 	border: 7px dashed var(--site-gold);
 }
 .join-info-text {
@@ -314,7 +313,7 @@ nav > .navbar {
 /* ========= Footer ========= */
 footer {
 	background-color: var(--site-dark);
-	color: var(--site-light);
+	color: var(--site-white);
 }
 .footer-social {
 	border-top: 1px solid var(--site-accent);
