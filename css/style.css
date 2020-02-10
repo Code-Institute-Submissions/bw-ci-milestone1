@@ -17,7 +17,10 @@
 }
 
 /* ========= General ========= */
-
+html {
+	position: relative;
+	min-height: 100%;
+}
 body,
 html {
 	margin: 0;
@@ -181,9 +184,14 @@ nav > .navbar {
 		min-width: 100%;
 	}
 }
+.mf-gallery {
+	height: 600px;
+	max-height: 600px;
+}
 .carousel {
 	margin: 0 auto;
 	max-width: 80%;
+	height: 500px;
 }
 .carousel-item {
 	transition: transform 1.6s ease-in-out, -webkit-transform 1.6s ease-in-out;
@@ -225,6 +233,7 @@ nav > .navbar {
 }
 .info-box-text {
 	color: var(--site-white);
+	font-size: 30px;
 	font-weight: bold;
 	font-style: italic;
 }
@@ -299,6 +308,12 @@ nav > .navbar {
 	border-top: 1px solid gold;
 	border-bottom: 1px solid gold;
 }
+.active {
+	background-color: var(--site-grey);
+	border-left: 7px solid var(--site-grey);
+	border-right: 7px solid var(--site-grey);
+	border: 1px solid white;
+}
 @media (max-width: 576px) {
 	.btn-custom {
 		background-color: var(--site-gold);
@@ -317,6 +332,7 @@ nav > .navbar {
 footer {
 	background-color: var(--site-dark);
 	color: var(--site-white);
+	width: 100%;
 }
 .footer-social {
 	border-top: 1px solid var(--site-accent);
