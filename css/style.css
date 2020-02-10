@@ -127,7 +127,7 @@ nav > .navbar {
 	padding: 0;
 }
 .hero-wrapper {
-	background-color: var(--site-accent);
+	background-color: transparent;
 }
 .hero-divider {
 	margin: 0px 0px 10px 0px;
@@ -183,7 +183,7 @@ nav > .navbar {
 }
 .carousel {
 	margin: 0 auto;
-	max-width: 45%;
+	max-width: 80%;
 }
 .carousel-item {
 	transition: transform 1.6s ease-in-out, -webkit-transform 1.6s ease-in-out;
