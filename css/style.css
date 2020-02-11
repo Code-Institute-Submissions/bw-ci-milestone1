@@ -47,7 +47,7 @@ li {
 /* ========= Navbar ========= */
 
 .navbar {
-	height: 99px;
+	height: 140px;
 	background-color: var(--site-dark);
 	border-bottom: 1px solid var(--site-accent);
 }
@@ -61,13 +61,15 @@ li {
 	color: var(--site-white);
 }
 #logo {
+	height: 100px;
 	margin-left: -20px;
+	margin-right: 20px;
+	padding: 0px;
 }
 .logo-text {
 	font-family: 'Bangers', cursive;
 	font-size: 28px;
 	vertical-align: middle;
-	margin-left: 0px;
 }
 .navbar-toggler {
 	padding: 10px;
@@ -82,7 +84,7 @@ li {
 
 	#logo {
 		display: inline-block;
-		width: 80px;
+		width: 100px;
 		padding: 0;
 		margin-right: 20px;
 	}
@@ -94,20 +96,17 @@ li {
 		text-align: center;
 		font-size: 1.5rem;
 		line-height: 2em;
-		border-top: 1px solid var(--site-accent);
-		border-bottom: 1px solid var(--site-accent);
-	}
-}
-nav > .navbar {
-	display: block;
-}
-@media (min-width: 576px) {
-	#logo {
-		width: 100px;
+		border-top: 1px solid black;
 		padding-right: 20px;
 	}
 	.navbar {
 		height: 140px;
+	}
+}
+@media (min-width: 768px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+		padding-right: 0;
+		padding-left: 0;
 	}
 }
 
@@ -203,7 +202,6 @@ nav > .navbar {
 .carousel-img {
 	width: 100%;
 	max-height: 500px;
-	margin: 5px;
 }
 /* ========= CONTACT - INFOBOX ========= */
 .info-box {
@@ -297,7 +295,7 @@ nav > .navbar {
 	border-left: 7px solid var(--site-gold);
 	border-right: 7px solid var(--site-gold);
 	border-radius: 10px;
-	padding: 10px 20px;
+	padding: 10px 10px;
 	-webkit-box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
 	box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
@@ -308,7 +306,7 @@ nav > .navbar {
 	border-top: 1px solid gold;
 	border-bottom: 1px solid gold;
 }
-.active {
+li.active {
 	background-color: var(--site-grey);
 	border-left: 7px solid var(--site-grey);
 	border-right: 7px solid var(--site-grey);
@@ -383,7 +381,6 @@ footer {
 	}
 }
 .footer-copyright {
-	width: 100%;
 	font-size: 0.65em;
 	text-align: center;
 	display: block;
@@ -425,4 +422,24 @@ footer {
 }
 .footer-brand > h2 {
 	margin-left: 20px;
+}
+
+/* ========= Contact Form ========= */
+.contact-page {
+	width: 100%;
+	margin-top: 150px;
+}
+.contact {
+	max-width: 100px;
+	margin: 0 auto;
+	display: table;
+	background-color: var(--site-accent);
+}
+div.contact-form {
+	display: table-row;
+}
+label,
+input {
+	display: table-cell;
+	margin: 6px;
 }
