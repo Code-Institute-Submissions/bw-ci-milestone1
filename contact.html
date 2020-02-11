@@ -46,34 +46,54 @@
         </nav>
     </div>
 </header>
-<section class="contact-page">
-  <form action="" method="GET" class="contact">
-    <div class="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" name="name" id="name" required aria-required="true"> 
+<section class="contact-form">
+  <div class="form-wrapper">
+    <div class="row">
+      <div class="col-label">
+        <label for="name">Name:</label>
+      </div>
+      <div class="col-input">
+        <input type="text" name="name" id="name" required aria-required="true">
+      </div>
+    </div>    <div class="row">
+      <div class="col-label">
+        <label for="email">Email:</label></div>
+      <div class="col-input">
+        <input type="email" name="email" id="email" required aria-required="true"></div>
+    </div>    <div class="row">
+      <div class="col-label">
+        <label for="phone">Mobile:</label></div>
+      <div class="col-input">
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></div>
+    </div>    <div class="row">
+      <div class="col-label"></div>
+      <div class="col-input"></div>
+    </div>    <div class="row">
+      <div class="col-label">
+        Which department does your question relate to?
+      </div>
+      <div class="col-input">
+        <select name="department" id="department">
+          <option value="General Enquiry">General Enquiry</option>
+          <option value="Partnership">Partnership</option>
+          <option value="New Member">New Member</option>
+          <option value="Existing Member">Existing Member</option>
+        </select>
+      </div>
+    </div>    <div class="row">
+      <div class="col-label">
+        <label for="message">Message:</label></div>
+      <div class="col-input">
+        <textarea name="message" id="message" cols="20" rows="10" required aria-required="true"></textarea></div>
     </div>
-    <div class="contact-form">
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" required aria-required="true">
+    <div class="row">
+      <div class="col-submit">
+        <input type="submit" value="Ask Now" class="form-submit">
+      </div>
     </div>
-    <div class="contact-form">
-      <label for="phone">Mobile:</label>
-      <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-    </div>
-    <div class="contact-form">
-      select type of query
-    </div>
-    <div class="contact-form">
-      <label for="message">Message:</label>
-      <br>
-      <textarea name="message" id="message" cols="20" rows="10" required aria-required="true"></textarea>
-    </div>
-    <div class="contact-form">
-      <input type="submit" value="ASK NOW">
-    </div>
-
-  </form>
+  </div>
 </section>
+
                               <!-- FOOTER -->
 <footer>
     <div class="footer-social container">
