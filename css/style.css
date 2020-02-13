@@ -57,6 +57,9 @@ li {
 	color: var(--site-dark);
 	opacity: 150% !important;
 }
+.nav-link {
+	margin-right: 3px;
+}
 .navbar-nav > li > a:hover {
 	color: var(--site-white);
 }
@@ -68,7 +71,7 @@ li {
 }
 .logo-text {
 	font-family: 'Bangers', cursive;
-	font-size: 28px;
+	font-size: 38px;
 	vertical-align: middle;
 }
 .navbar-toggler {
@@ -76,12 +79,22 @@ li {
 	background-color: var(--site-silver);
 	color: black;
 }
+.navbar-brand {
+	margin-right: 10px;
+}
 /* --------- Navbar Media Queries --------- */
+@media (max-width: 768px) {
+	.logo-text {
+		font-size: 32px;
+	}
+}
 @media (max-width: 576px) {
 	#top-nav {
 		display: none;
 	}
-
+	.logo-text {
+		font-size: 28px;
+	}
 	#logo {
 		display: inline-block;
 		width: 100px;
@@ -107,6 +120,16 @@ li {
 	.navbar-expand-md .navbar-nav .nav-link {
 		padding-right: 2px;
 		padding-left: 2px;
+	}
+}
+@media (min-width: 970px) {
+	.nav-link {
+		margin-right: 12px;
+	}
+}
+@media (max-width: 400px) {
+	.navbar-brand .logo-text {
+		display: none;
 	}
 }
 
@@ -310,15 +333,16 @@ li.active {
 	background-color: var(--site-grey);
 	border-left: 7px solid var(--site-grey);
 	border-right: 7px solid var(--site-grey);
-	border: 1px solid white;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 	.btn-custom {
+		text-align: right;
+		width: 80%;
 		background-color: var(--site-gold);
 		border-left: 7px solid transparent;
 		border-right: 7px solid transparent;
 		border-radius: 0px;
-		padding: 5px 10px;
+		padding: 5px 0px;
 		margin: 2.4px 15px;
 		-webkit-box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
 		-moz-box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
