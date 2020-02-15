@@ -19,6 +19,8 @@
 
 /* ========= General ========= */
 
+/* #region */
+
 html {
 	position: relative;
 	min-height: 100%;
@@ -51,7 +53,11 @@ ul, li {
 	padding: 0;
 }
 
+/* #endregion */
+
 /* ========= Navbar ========= */
+
+/* #region */
 
 .navbar {
 	height: 140px;
@@ -101,7 +107,11 @@ ul, li {
 	margin-right: 10px;
 }
 
+/* #endregion */
+
 /* --------- Navbar Media Queries --------- */
+
+/* #region */
 
 @media (max-width: 768px) {
 	#logo {
@@ -175,7 +185,11 @@ ul, li {
 	}
 }
 
+/* #endregion */
+
 /* ========= Header ========= */
+
+/* #region */
 
 .hero-wrapper {
 	position: relative;
@@ -253,7 +267,11 @@ ul, li {
 	}
 }
 
+/* #endregion */
+
 /* ========= Carousel ========= */
+
+/* #region */
 
 @media (max-width: 576px) {
 	.carousel {
@@ -261,7 +279,7 @@ ul, li {
 	}
 }
 
-.mf-gallery {
+.gallery {
 	height: 600px;
 	max-height: 600px;
 }
@@ -285,7 +303,11 @@ ul, li {
 	max-height: 500px;
 }
 
+/* #endregion */
+
 /* ========= CONTACT - INFOBOX ========= */
+
+/* #region */
 
 .info-box {
 	background-image: url(../assets/images/pic4.jpg);
@@ -340,7 +362,11 @@ ul, li {
 	margin-left: 30px;
 }
 
-/* ========= Main ========= */
+/* #endregion */
+
+/* ========= Main page ========= */
+
+/* #region */
 
 .card {
 	margin: 10px 5px;
@@ -369,7 +395,7 @@ ul, li {
 	margin: 20px;
 }
 
-.mf-membership {
+.membership {
 	background-color: var(--site-dark);
 	border-bottom: 1px solid var(--site-accent);
 }
@@ -422,7 +448,11 @@ li.active {
 	}
 }
 
+/* #endregion */
+
 /* ========= Footer ========= */
+
+/* #region */
 
 footer {
 	background-color: var(--site-dark);
@@ -533,18 +563,28 @@ footer {
 	margin-left: 20px;
 }
 
-/* ========= Contact Form ========= */
+/* #endregion */
+
+/* ========= Contact Page ========= */
+
+/* #region */
+
+.contact-info>.info-box-item {
+	background: none;
+}
+
+.contact-info, .contact-form {
+	width: 100vw;
+}
 
 .contact-text {
 	width: 90%;
 	margin: 0 auto;
 	margin-bottom: 10px;
-	background-color: var(--site-accent);
-}
-
-.contact-form {
-	margin-top: 150px;
-	margin-bottom: 20px;
+	background-color: var(--site-grey);
+	color: var(--site-white);
+	border: 1px solid #fff;
+	border-radius: 20px;
 }
 
 .form-wrapper {
@@ -552,22 +592,26 @@ footer {
 	flex-direction: column;
 	padding: 20px 30px;
 	height: fit-content;
-	background-color: var(--site-grey);
 	width: 90%;
 	max-width: 500px;
 	border: 1px solid var(--site-white);
-	color: var(--site-gold);
+	color: var(--site-dark);
+	border-radius: 10px;
 }
 
 .form-wrapper>.row {
 	text-align: center;
-	margin: 10px;
+	padding: 10px;
 }
 
 .col-label {
 	width: 100%;
 	margin-bottom: 3px;
 	text-align: left;
+}
+
+.col-label>label {
+	border-bottom: 1px dotted white;
 }
 
 .col-input {
@@ -592,6 +636,11 @@ footer {
 	-webkit-box-shadow: 11px 11px 24px -19px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 11px 12px 20px -12px rgba(0, 0, 0, 0.75);
 	box-shadow: 11px 12px 20px -12px rgba(0, 0, 0, 0.75);
+	border-radius: 10px;
+	background-color: var(--site-accent);
+	color: var(--site-dark);
+	padding: 4px 7px;
+	border: none;
 }
 
 @media (min-width: 576px) {
@@ -608,5 +657,37 @@ footer {
 		width: 70%;
 		margin: 0 auto;
 		margin-bottom: 10px;
+	}
+	.contact-info, .contact-form {
+		width: 49vw;
+		margin: 0px;
+	}
+}
+
+/* #endregion */
+
+/* ========= About Page ========= */
+
+/* #region */
+
+.of-about {
+	margin: ;
+}
+
+.about-intro {}
+
+.about-facility {}
+
+/* #endregion */
+
+/* MQ for navbar vs content margins */
+
+.of-about, .of-contact, .of-gallery, of-offer {
+	margin-top: 140px;
+}
+
+@media (min-width: 768px) {
+	.of-about, .of-contact {
+		margin-top: 140px;
 	}
 }
