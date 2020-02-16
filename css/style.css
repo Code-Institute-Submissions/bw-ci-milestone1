@@ -671,12 +671,34 @@ footer {
 /* #region */
 
 .of-about {
-	margin: ;
+	color: white;
+	background-color: var(--site-grey);
+	margin: 0 auto;
 }
 
-.about-intro {}
+.about-intro {
+	margin: 2rem;
+}
 
-.about-facility {}
+.about-facility {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 2rem 2rem 2rem 3rem;
+}
+
+.equipment>li, .additional>li {
+	list-style-type: disc;
+}
+
+@media (min-width: 768px) {
+	.about-facility {
+		justify-content: center;
+	}
+	.additional {
+		margin-left: 6rem;
+	}
+}
 
 /* #endregion */
 
