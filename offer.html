@@ -51,44 +51,67 @@
   </header>
 
   <!-- MAIN CONTENT / services and membership options-->
-  <main class="of-offer container-fluid">
-    <div class="row m-auto">
-      <section class="offer-memberships col-xs-12 col-lg-12 ">
-        <h2 style="color:  #fff;">Membership Options</h2>
+  <main class="of-offer container">
+    <div class="row" style="margin: 0 auto;;">
+      <section class="offer-memberships col-xs-12">
+        <h2 class="offer-heading">Membership Options</h2>
         <div class="card-wrapper">
           <div class="card">
-            <div class="card-body">
-              <h4 class="card-title ">1 Month PAYG</h4>
-              <p class="card-text">No commitment. Cancel at any time!</p>
+            <div class="calendar-header">
+              <h4 class="card-title mt-3">1 Month PAYG</h4>
             </div>
-            <img src="" alt="" class="card-img-bottom">
+            <div class="card-body">
+              <p class="price">&euro;34.99</p>
+              <button type="button" onclick="extraInfoOne()" class="card-text-btn m-auto">More
+                Info</button>
+              <p class="extra-info card-text m-2">No commitment. Cancel at any time!<br><br><br><br>
+                <span class="text-nowrap font-italic"> - <a class="a-dark" href="#">Join Now</a> -</span></p>
+              <p id="extraInfo1" class="card-text m-2" style="display: none;">No commitment. Cancel at any
+                time!<br><br><br><br>
+                <span class="text-nowrap font-italic"> - <a href="#">Join Now</a> -</span></p>
+            </div>
           </div>
           <div class="card">
+            <div class="calendar-header">
+              <h4 class="card-title mt-3">12 Month DD</h4>
+            </div>
             <div class="card-body">
-              <h4 class="card-title">12 Month DD</h4>
-              <p class="card-text">12 Month Agreement, taken monthly via Direct Debit.<br><br>
-                <span class="text-nowrap font-italic"> - 10%
+              <p class="price">&euro;29.75</p>
+              <button type="button" onclick="extraInfoTwo()" class="card-text-btn m-auto">More
+                Info</button>
+              <p class="extra-info card-text m-2">12 Month Agreement, taken monthly via Direct Debit.<br><br>
+                <span class="text-nowrap font-italic"> - 15%
                   Discount -</span></p>
+              <p id="extraInfo2" class="card-text m-2" style="display: none;">12 Month Agreement, taken monthly via
+                Direct Debit.<br><br>
+                <span class="text-nowrap font-italic"> - 15%
+                  Discount -</span></p id="noInfo">
             </div>
-            <img src="" alt="" class="card-img-bottom">
           </div>
           <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">12 Month Upfront</h4>
-              <p class="card-text m-2 ">Cheapest membership deal. Pay 12 months upfront.<br><br>
-                <span class="text-nowrap font-italic"> -
-                  20% Discount -</span>
-              </p>
+            <div class="calendar-header">
+              <h4 class="card-title mt-3">12 Month Upfront</h4>
             </div>
-            <img src="" alt="" class="card-img-bottom">
+            <div class="card-body">
+              <p class="price">&euro;315</p>
+              <button type="button" onclick="extraInfoThree()" class="card-text-btn m-auto">More
+                Info</button>
+              <p class="extra-info card-text m-2">Cheapest membership deal. Pay 12 months upfront.<br><br>
+                <span class="text-nowrap font-italic"> -
+                  25% Discount -</span>
+                <p id="extraInfo3" class="card-text m-2" style="display: none;">Cheapest membership deal. Pay 12
+                  months
+                  upfront.<br><br>
+                  <span class="text-nowrap font-italic"> -
+                    25% Discount -</span>
+                </p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="offer-classes col col-xs-12 col-lg-5">
-        <h2>Class Schedule at Olympus</h2>
-      </section>
-      <aside class="offer-trainers col col-xs-12 col-lg-7">
-        <h2>Our Team</h2>
+
+      <aside class="offer-trainers col-xs-12">
+        <h2 class="offer-heading">Our Team</h2 class=offer-heading">
         <div class="card trainer">
           <div class="trainer-hi"></div>
           <div class="trainer-img"></div>
@@ -146,6 +169,38 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <!-- CUSTOM JAVASCRIPT-->
+  <script>
+    var extraInfo1 = document.getElementById("extraInfo1");
+    var extraInfo2 = document.getElementById("extraInfo2");
+    var extraInfo3 = document.getElementById("extraInfo3");
+    function extraInfoOne() {
+      var display = extraInfo1.style.display;
+      if (display == 'block') {
+        extraInfo1.style.display = 'none';
+      }
+      else {
+        extraInfo1.style.display = 'block';
+      }
+    }
+    function extraInfoTwo() {
+      var display = extraInfo2.style.display;
+      if (display == 'block') {
+        extraInfo2.style.display = 'none';
+      }
+      else {
+        extraInfo2.style.display = 'block';
+      }
+    }
+    function extraInfoThree() {
+      var display = extraInfo3.style.display;
+      if (display == 'block') {
+        extraInfo3.style.display = 'none';
+      }
+      else {
+        extraInfo3.style.display = 'block';
+      }
+    }
+  </script>
 </body>
 
 </html>
