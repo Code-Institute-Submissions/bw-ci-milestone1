@@ -15,6 +15,7 @@
 	--site-dark: #2b2b28;
 	--site-grey: #494d52;
 	--site-white: #fff;
+	--site-nav: rgba(227, 176, 75, 0.25);
 }
 
 /* ========= General ========= */
@@ -368,38 +369,6 @@ ul, li {
 
 /* #region */
 
-.card {
-	margin: 10px 5px;
-	width: 300px;
-}
-
-.card-body {
-	background-color: var(--site-dark);
-	color: var(--site-white);
-	height: 200px;
-}
-
-.card-title {
-	margin: 0 auto;
-	margin-top: 65%;
-	width: 150px;
-	border-radius: 20%;
-	font-size: 38px;
-	-webkit-box-shadow: 33px 25px 71px -32px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 33px 25px 71px -32px rgba(0, 0, 0, 0.75);
-	box-shadow: 33px 25px 71px -32px rgba(0, 0, 0, 0.75);
-}
-
-.card-text {
-	height: 50px;
-	margin: 20px;
-}
-
-.membership {
-	background-color: var(--site-dark);
-	border-bottom: 1px solid var(--site-accent);
-}
-
 .membership-icon {
 	height: 300px;
 }
@@ -412,10 +381,10 @@ ul, li {
 }
 
 .btn-custom {
-	background-color: var(--site-gold);
+	background-color: var(--site-nav);
 	color: var(--site-dark);
-	border-left: 7px solid var(--site-gold);
-	border-right: 7px solid var(--site-gold);
+	border-left: 7px solid var(--site-nav);
+	border-right: 7px solid var(--site-nav);
 	border-radius: 10px;
 	padding: 10px 10px;
 	-webkit-box-shadow: 14px 19px 72px -16px rgba(0, 0, 0, 0.75);
@@ -425,15 +394,15 @@ ul, li {
 
 .btn-custom:hover {
 	color: var(--site-white);
-	background-color: var(--site-dark);
-	border-top: 1px solid gold;
-	border-bottom: 1px solid gold;
+	background-color: var(--site-gold);
+	border-top: 1px solid var(--site-nav);
+	border-bottom: 1px solid var(--site-nav);
 }
 
 li.active {
-	background-color: var(--site-grey);
-	border-left: 7px solid var(--site-grey);
-	border-right: 7px solid var(--site-grey);
+	background-color: var(--site-gold);
+	border-left: 7px solid var(--site-gold);
+	border-right: 7px solid var(--site-gold);
 }
 
 @media (max-width: 768px) {
@@ -702,14 +671,55 @@ footer {
 
 /* #endregion */
 
+/* ========= Offer Page ========= */
+
+/* #region */
+
+.of-offer {
+	display: flex;
+}
+
+.offer-memberships {
+	text-align: center;
+}
+
+.offer-classes {}
+
+.offer-trainers {}
+
+.card-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: left;
+}
+
+.card {
+	margin: 0.5em;
+	width: 280px;
+}
+
+.card-body {
+	background-color: var(--site-accent);
+	min-height: 203px;
+}
+
+.card-title {
+	color: var(--site-dark);
+	text-align: center;
+	font-weight: bold;
+}
+
+/* #endregion */
+
 /* MQ for navbar vs content margins */
 
-.of-about, .of-contact, .of-gallery, of-offer {
-	margin-top: 140px;
+.of-about, .of-contact, .of-gallery, .of-offer {
+	margin-top: 150px;
 }
 
 @media (min-width: 768px) {
-	.of-about, .of-contact {
+	.of-about, .of-contact, .of-offer {
 		margin-top: 140px;
 	}
 }
