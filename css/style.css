@@ -62,8 +62,8 @@ ul, li {
 
 .navbar {
 	height: 140px;
-	background-color: var(--site-dark);
-	border-bottom: 1px solid var(--site-accent);
+	background-color: var(--site-gold);
+	border-bottom: 1px solid var(--site-white);
 }
 
 .navbar-nav {
@@ -199,6 +199,8 @@ ul, li {
 .hero-img {
 	margin: 100px 0 0 0;
 	max-width: 100%;
+	border-left: 1px solid var(--site-accent);
+	border-right: 1px solid var(--site-accent);
 }
 
 @media (min-width: 992px) {
@@ -215,6 +217,7 @@ ul, li {
 
 .hero-wrapper {
 	background-color: transparent;
+	border-bottom: 1px solid var(--site-accent);
 }
 
 .hero-divider {
@@ -706,9 +709,9 @@ footer {
 }
 
 .offer-heading {
-	background-color: var(--site-grey);
-	padding: 5px 15px;
-	border-radius: 2px;
+	background-color: rgba(73, 77, 82, 0.4);
+	padding: 20px 25px;
+	border-radius: 5px;
 	width: fit-content;
 	color: var(--site-white);
 	text-align: center;
@@ -788,6 +791,78 @@ footer {
 	.card-text-btn {
 		display: block;
 	}
+}
+
+.of-about {
+	color: white;
+	background-color: var(--site-grey);
+	margin: 0 auto;
+}
+
+.about-intro {
+	margin: 2rem;
+}
+
+.about-facility {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 2rem 2rem 2rem 3rem;
+}
+
+.equipment>li, .additional>li {
+	list-style-type: disc;
+}
+
+@media (min-width: 768px) {
+	.about-facility {
+		justify-content: center;
+	}
+	.additional {
+		margin-left: 6rem;
+	}
+}
+
+/* #endregion */
+
+/* ========= Gallery Page ========= */
+
+/* #region */
+
+.gallery-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.image-wrapper {
+	margin: 0.2rem;
+}
+
+.gallery-item {
+	border: 2px solid var(--site-white);
+}
+
+.modal-body>.gallery-item {
+	border: none;
+}
+
+.gallery-item>label {
+	margin-bottom: 0;
+}
+
+.image-clickable {
+	max-width: 300px;
+}
+
+.modal-body {
+	padding: 0;
+}
+
+.of-image {
+	width: 100%;
 }
 
 /* #endregion */
