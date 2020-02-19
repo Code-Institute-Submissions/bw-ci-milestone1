@@ -15,7 +15,7 @@
 	--site-dark: #2b2b28;
 	--site-grey: #494d52;
 	--site-white: #fff;
-	--site-nav: rgb(102, 80, 36);
+	--site-nav: #50452f;
 }
 
 /* ========= General ========= */
@@ -62,7 +62,7 @@ ul, li {
 
 .navbar {
 	height: 140px;
-	background-color: var(--site-gold);
+	background-color: #50452f;
 	border-bottom: 1px solid var(--site-white);
 }
 
@@ -683,19 +683,29 @@ footer {
 
 .of-about {
 	color: white;
-	background-color: var(--site-grey);
+	background-color: var(--site-dark);
 	margin: 0 auto;
 }
 
 .about-intro {
 	margin: 2rem;
+	word-wrap: wrap;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 1rem;
 }
 
 .about-facility {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	margin: 2rem 2rem 2rem 3rem;
+	margin: 1rem;
+	margin-left: 1rem;
+	justify-content: center;
+}
+
+.equipment, .additional {
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 2rem;
 }
 
 .equipment>li, .additional>li {
@@ -703,11 +713,8 @@ footer {
 }
 
 @media (min-width: 768px) {
-	.about-facility {
-		justify-content: center;
-	}
 	.additional {
-		margin-left: 6rem;
+		margin-left: 4rem;
 	}
 }
 
@@ -810,36 +817,6 @@ footer {
 	}
 	.card-text-btn {
 		display: block;
-	}
-}
-
-.of-about {
-	color: white;
-	background-color: var(--site-grey);
-	margin: 0 auto;
-}
-
-.about-intro {
-	margin: 2rem;
-}
-
-.about-facility {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	margin: 2rem 2rem 2rem 3rem;
-}
-
-.equipment>li, .additional>li {
-	list-style-type: disc;
-}
-
-@media (min-width: 768px) {
-	.about-facility {
-		justify-content: center;
-	}
-	.additional {
-		margin-left: 6rem;
 	}
 }
 
