@@ -34,8 +34,6 @@
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Opening hours info to be displayed on larger screens only
-                          <div class="list-unstyled navbar-nav fixed-top" id="top-nav">s</div> -->
         <div class="collapse navbar-collapse" id="nav">
 
           <ul class="nav navbar-nav">
@@ -47,7 +45,10 @@
           </ul>
         </div>
       </nav>
+    </div>
   </header>
+
+  <!-- MAIN CONTENT of contact page-->
   <main class="of-contact container-fluid" style="padding: 10px 0px;">
     <!-- INFOBOX - address / contact / opening hours-  -->
     <div class="row" style="margin: 0 auto;">
@@ -76,44 +77,50 @@
           </ul>
         </span>
         <br>
-        <span class="info-box-item" style="width: 100%;>
-      <i class=" fas fa-globe-europe"></i>
+        <span class="info-box-item" style="width: 100%;">
+          <i class=" as fa-globe-europe"></i>
           <p class="info-box-text">Location</p>
           <p class="info-box-background">3A Boyne Road,<br>Dublin,<br>Co. Dublin,<br>Ireland</p>
         </span>
         <br>
-        <span class="info-box-item" style="width: 100%;>
-      <i class=" fas fa-phone-square-alt"></i>
+        <span class="info-box-item" style="width: 100%;">
+          <i class="fas fa-phone-square-alt"></i>
           <i class="fas fa-envelope-square"></i>
           <p class="info-box-text">Contact</p>
           <p class="info-box-background">01 007 2020 <span class="info-email">contact@olympusfitness.com</span></p>
         </span>
       </section>
+
+      <!-- Contact Form -->
       <section class="contact-form float-right">
         <div class="contact-text text-center p-3">
-          <h1>Any questions?</h1>
-          <h5 class="m-3">Fill in the form below, and one of our staff will reply shortly.</h5>
+          <h1 class="offer-heading">Any questions?</h1>
+          <h5 class="m-3" style="
+          background-color: var(--site-grey); padding: 1rem;">Fill in the form below, and one of our staff will reply
+            shortly.</h5>
         </div>
-        <div class="form-wrapper container-fluid info-box-background">
+        <div class="form-wrapper container-fluid">
           <div class="row">
             <div class="col-label">
               <label for="name">Name:</label>
             </div>
             <div class="col-input">
-              <input type="text" name="name" id="name" required aria-required="true">
+              <input type="text" name="name" id="name" required aria-required="true" placeholder="John Smith">
             </div>
           </div>
           <div class="row">
             <div class="col-label">
               <label for="email">Email:</label></div>
             <div class="col-input">
-              <input type="email" name="email" id="email" required aria-required="true"></div>
+              <input type="email" name="email" id="email" required aria-required="true" placeholder="jsmith@gmail.com">
+            </div>
           </div>
           <div class="row">
             <div class="col-label">
               <label for="phone">Mobile:</label></div>
             <div class="col-input">
-              <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></div>
+              <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="051-111-1111">
+            </div>
           </div>
           <div class="row">
             <div class="col-label" style="margin-bottom: 10px">
@@ -122,7 +129,7 @@
             </div>
             <div class="col-input">
               <select name="department" id="department">
-                <option value="General Enquiry">General Enquiry</option>
+                <option value="General Enquiry" selected>General Enquiry</option>
                 <option value="Partnership">Partnership</option>
                 <option value="New Member">New Member</option>
                 <option value="Existing Member">Existing Member</option>
@@ -133,7 +140,8 @@
             <div class="col-label">
               <label for="message">Message:</label></div>
             <div class="col-input">
-              <textarea name="message" id="message" cols="20" rows="10" required aria-required="true"></textarea></div>
+              <textarea name="message" id="message" cols="20" rows="10" required placeholder="Your Message"></textarea>
+            </div>
           </div>
           <div class="row">
             <div class="col-submit m-auto">
@@ -195,4 +203,5 @@
     crossorigin="anonymous"></script>
   <!-- CUSTOM JAVASCRIPT-->
 </body>
-</msain>
+
+</html>

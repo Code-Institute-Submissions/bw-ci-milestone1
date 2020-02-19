@@ -73,7 +73,6 @@ ul, li {
 .navbar-nav>li>a {
 	text-decoration: none;
 	display: block;
-	opacity: 150% !important;
 }
 
 .navbar-nav>li>a:hover {
@@ -253,13 +252,6 @@ ul, li {
 	font-weight: 800;
 	letter-spacing: 4px;
 	padding-bottom: 4px;
-}
-
-.join-info-sub {
-	min-width: 300px;
-	word-wrap: none;
-	font-size: 0.8em;
-	color: #000;
 }
 
 .far {
@@ -587,20 +579,19 @@ footer {
 	width: 90%;
 	margin: 0 auto;
 	margin-bottom: 10px;
-	background-color: var(--site-grey);
 	color: var(--site-white);
-	border: 1px solid #fff;
 	border-radius: 20px;
 }
 
 .form-wrapper {
 	display: flex;
 	flex-direction: column;
+	background-color: rgba(73, 77, 82, 0.3);
 	padding: 20px 30px;
 	height: fit-content;
 	width: 90%;
 	border: 1px solid var(--site-white);
-	color: var(--site-dark);
+	color: var(--site-white);
 	border-radius: 10px;
 }
 
