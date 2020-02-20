@@ -666,6 +666,10 @@ footer {
 	}
 }
 
+.modal-header, .modal-body {
+	background-color: var(--site-gold);
+}
+
 /* #endregion */
 
 /* ========= About Page ========= */

@@ -78,7 +78,7 @@
         </span>
         <br>
         <span class="info-box-item" style="width: 100%;">
-          <i class=" as fa-globe-europe"></i>
+          <i class="fas fa-globe-europe"></i>
           <p class="info-box-text">Location</p>
           <p class="info-box-background">3A Boyne Road,<br>Dublin,<br>Co. Dublin,<br>Ireland</p>
         </span>
@@ -145,7 +145,25 @@
           </div>
           <div class="row">
             <div class="col-submit m-auto">
-              <input type="submit" value="Ask Now" class="form-submit">
+              <input type="submit" value="Ask Now" class="form-submit" data-toggle="modal" data-target="#formModal">
+              <div class="modal fade" id="formModal">
+                <div class="modal-dialog modal-sm modal-dialog-centered">
+                  <div class="modal-content">
+
+                    <!-- Close button as a header-->
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- content of the modal -->
+                    <div class="modal-body">
+                      <h2>Thank you for your message!</h2>
+                      <p>Member of our staff will contact you shortly.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
