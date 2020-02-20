@@ -1,8 +1,11 @@
 # Olympus Fitness - Responsive site for a gym business. 
 #### _Author_ - *Blazej Werbanowski*
+<<<<<<< HEAD
 
 Link to the site https://badziobw.github.io/bw-ci-milestone1/ 
 
+=======
+>>>>>>> 5064708e56e4b6274a6a2e37b10a5e610c4264a4
 For my project in the User Centered Frontend Design module I have chosen to do a website for a fake gym business. As a gym enthusiast myself, I had a fair idea of what content such site needs which made a project easier. I have focused on making a user friendly website that tells potential client all the information he may need and also makes a new customer excited to visit the gym and see it for himself. 
 My personal goal when designing this website was to heavily alter and edit existing bootstrap  components. I wanted use this project as a learning tool predominantly to improve my little knowledge of bootstrap and semantic HTML.
 
@@ -101,4 +104,8 @@ When browsing the website on mobile the offer.html page contains "More Info" but
 
 I have been partly inspired by the website of [Goldstone Fitness Gym](https://www.goldstonefitness.ie)
 
+<<<<<<< HEAD
 _This project is for educational purposes only_
+=======
+_This project is for educational purposes only_
+>>>>>>> 5064708e56e4b6274a6a2e37b10a5e610c4264a4
