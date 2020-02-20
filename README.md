@@ -19,7 +19,10 @@ Existing Customer - I want to be able to check the opening times of the gym and 
 
 These goals are accomplished by designing a website that will be easy to navigate and rich in information. The information has to well presented to not confuse the customer. This is done by creating sections on the website that aim to give information about the gym, it's membership options, its contact information and opening times. Additional features are the gallery and social links that aim to help the owner interact with the customers. An easy to use, simple form that allows user to ask a question in a matter of minutes is also designed and placed conveniently in the contact page.
 
+#### Wireframe image of homepage idea
 
+![Wireframe Image](/assets/wireframe/wireframe.jpg)
+Format: ![wireframe img](url)
 
 ## Features
 
