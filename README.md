@@ -19,8 +19,6 @@ Existing Customer - I want to be able to check the opening times of the gym and 
 
 These goals are accomplished by designing a website that will be easy to navigate and rich in information. The information has to well presented to not confuse the customer. This is done by creating sections on the website that aim to give information about the gym, it's membership options, its contact information and opening times. Additional features are the gallery and social links that aim to help the owner interact with the customers. An easy to use, simple form that allows user to ask a question in a matter of minutes is also designed and placed conveniently in the contact page.
 
-### Project Scope
-
 
 
 ## Features
@@ -31,18 +29,20 @@ Each section of the home page aims to provide short, relevant information with m
 ### Existing features
 
 * Navigation menu at the top and bottom of each subpage that allows user to go to any subpage.
-*
-*
-*
-*
-
+* Sticky footer and header with most sought for information and links
+* Background images specifically chosen to make the customer more interested in the gym.
+* Gallery of the gym in a form of carousel that is kept "in the back" and does not distract the user
+* Simple font (roboto) throughout, with exception for brand name which makes it stand out and complement the logo
+* Mobile Home page's  'More Info' button transfer user directly to a bigger variery of information about the membership options.
+* Contact page contains a simple form that allows user to ask question without forcing to provide a lot of information to do so, only email is required as a contact option, telephone is only optional.
+* On submit of form a Modal Popup appears thanking the user for submitting a question.
+* On the Gallery subpage when image is clicked it scales while maintaining its quality.
+ 
 
 #### Features Left to Implement
 
-*
-*
-*
-*
+* Form that will fully validate
+* Add a section with a foreword from personal trainers (testimonials)
 
 ## Technologies Used
 * HTML 5 - used for the semantic markup of the website
@@ -55,6 +55,7 @@ Each section of the home page aims to provide short, relevant information with m
 * Fontawesome -  for icons that aim to improve the look of the website
 * Markdown - used for readMe files
 * Git - used as a version control to commit the code to Github.com
+* http://ami.responsivedesign.is/ - this website was used to display the site's responsiveness at the same time
 
 When choosing color pallete for the project I have used a [Color Hunt pallete](https://colorhunt.co/palette/161696), and added complimentary colors that I found matching this pallete.
 
@@ -82,6 +83,7 @@ Overall I was happy with the testing, the fonts seemed to be sized appropriately
 * Upon validation of the code I noticed few errors with the choice of html tags, I have chosen wrong child elements for the element span in many cases, which showed up error. This is something that I will need to look into and re build that portion of the code to make sure it validates correctly.
 
 ## Deployment
+The site's index.html README.md and sub pages are in the main directory, stylesheets are kept in css folder and additional components are located in the assets folder.
 Finished project has been deployed as a website using Github Pages. It is synchronised with master branch, any further commits to the master branch will be updated live on the deployed site.
 It can be viewed under https://badziobw.github.io/bw-ci-milestone1/
 To deploy the repository on a local machine, git clone the repository https://github.com/badziobw/bw-ci-milestone1 to your machine.
